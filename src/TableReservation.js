@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const TableReservation = () => {
   return (
-    <div>TableReservation</div>
+    <>
+        <Helmet>
+            <title>Table Reservation | Little Lemon</title>
+            <meta name='description' content='Little Lemon Restaurant Table Reservation'/>
+        </Helmet>
+        <div>Table Reservation</div>
+    </>
   )
 }
 

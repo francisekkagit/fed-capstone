@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+        <Helmet>
+            <title>Home | Little Lemon</title>
+            <meta name='description' content='Little Lemon Restaurant Homepage'/>
+        </Helmet>
+        <div>Home</div>
+    </>
   )
 }
 
