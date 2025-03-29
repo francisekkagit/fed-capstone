@@ -1,2 +1,96 @@
+:root {
+    --green: #495E57; /* Example hex color */
+    --yellow: #F4CE14;
+    --hover-grey: #eeeeee;
+}
 
+.layout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+button{
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+}
+.border-red{
+    border: 1px solid red;
+}
+.border-green{
+    border: 1px solid green;
+}
+
+/*Navigation Bar*/
+.navbar{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+.navbar img{
+    width: 100%;
+    max-width: 180px;
+}
+
+.navLinks{
+    display: flex;
+    gap: 12px;
+}
+.navLinks a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.navLinks a:hover{
+    color: var(--green);
+    transition: all 0.2s ease-in-out;
+}
+.navLinksMobile{
+    display: none;
+    flex-shrink: 0;
+    position: relative;
+}
+.navLinksMobile > button{
+    width: 28px;
+    height: 28px;
+}
+.navLinksMobileDD{
+    position: absolute;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 12px 0px 12px 12px;
+    border: 1px solid black;
+    background-color: white;
+    overflow: hidden;
+}
+.navLinksMobileDD a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.navLinksMobileDD a:hover{
+    background-color: var(--hover-grey);
+    transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 640px){
+    .navLinks{
+        display: none;
+    }
+    .navLinksMobile{
+        display: block;
+    }
+    .navbar img{
+        max-width: 32px;
+    }
+}
