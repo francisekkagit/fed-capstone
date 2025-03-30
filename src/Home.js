@@ -59,7 +59,7 @@ const Home = () => {
                       <p style={{color:"#ff7400"}}>${special.price}</p>
                     </div>
                     <p>{special.description}</p>
-                    <p style={{marginTop:"24px"}}>Order a delivery</p>
+                    <p style={{marginTop:"24px", fontWeight:"bold"}}>Order a delivery</p>
                   </div>
                 </div>
               ))}
