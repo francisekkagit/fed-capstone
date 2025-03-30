@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ConfirmedBooking from './ConfirmedBooking';
 
 const BookingForm = ({availableTimes}) => {
     const [name, setName] = useState("");
@@ -59,7 +60,7 @@ const BookingForm = ({availableTimes}) => {
         <button type='submit' className='primary-btn'>Submit</button>
         </form>
 
-        {submitted && <div className='form-submitted'>✅ Form was submitted</div>}
+        {submitted && <ConfirmedBooking/>}
     </div>
   )
 }
