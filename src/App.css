@@ -189,6 +189,55 @@ p{
     gap: 24px;
 }
 
+/*Table Reservation*/
+.tableres-hero{
+    background-color: var(--green);
+    display: flex;
+    justify-content: center;
+    padding: 32px 10px;
+}
+.tableres-hero-info{
+    width: 100%;
+    max-width: 1000px;
+    color: white;
+    text-align: center;
+}
+.tableres-hero-info h1{
+    color: var(--yellow);
+}
+.tableres-form-container{
+    padding: 32px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tableres-form{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.tableres-form-entry{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+input{
+    width: 278px;
+    border-radius: 8px;
+    border: 1px solid black;
+    height: 28px;
+    padding: 0px 10px;
+}
+select{
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid black;
+    height: 30px;
+}
+.form-submitted{
+    margin-top: 12px;
+    color: green;
+}
 
 @media (max-width: 768px){
     /*Homepage*/
