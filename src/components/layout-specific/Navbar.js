@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className='navbar'>
       <picture>
         <source srcSet='/LL_logo_m.png' className='logo-m' media='(max-width: 640px)'/>
-        <img src='/LL_Logo.jpg' alt='Little Lemon Logo'/>
+        <img src='/LL_Logo.jpg' alt='Little_Lemon_Logo'/>
       </picture>
       
       <div className='navLinks'>

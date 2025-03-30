@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <div className='layout'>
       <Navbar/>
-      <main>
+      <main style={{width:"100%"}}>
         <Outlet/>
       </main>
       <Footer/>
